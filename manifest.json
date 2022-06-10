@@ -1,0 +1,15 @@
+{
+  "name": "BroRoll",
+  "version": "1.0",
+  "description": "You will have a 1/100 chance to get a Rick Roll on every new page load.",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["background.js"]
+    }
+  ],
+
+  "permissions": ["http://*/*", "https://*/*"],
+  "manifest_version": 2
+}
